@@ -1,0 +1,37 @@
+.border{
+    border: 2px solid black;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+#img-container{
+    height: 582px;
+    width:250px;
+    background-image: url(/instagram/insta-images/home-phones.png);
+    padding: 26px 20px 0px 156px;
+}
+
+#img-1{
+    width: 250px;
+    height: 538.84px;
+}
+
+#content-container{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+#insta-logo{
+    display: flex;
+    justify-content: center;
+    background-image: url(/instagram/insta-images/static-logos.png);
+    background-size: 100px;
+    object-fit: contain;
+    /* height: 100px;
+    width: 64px; */
+}
