@@ -91,23 +91,52 @@ body{
 }
 
 #img-1{
-    opacity: 1;
-    animation: animation 3s ease-in-out 9s 4 alternate forwards;
+    animation: animation-1 20s ease-in-out 0s infinite alternate forwards;
+    /* animation-name: animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
 }
 
 
 #img-2{
-    visibility: hidden;
+    animation: animation-2 20s ease-in-out 0s infinite alternate forwards;
 }
 
 #img-3{
-    visibility: hidden;
+    animation: animation-3 20s ease-in-out 0s infinite alternate forwards;
 }
 
 #img-4{
-    visibility: hidden;
+    animation: animation-4 20s ease-in-out 0s infinite alternate forwards;
 }
-@keyframes animation {
-    from{opacity: 1;}
-    to{opacity: 0;}
+@keyframes animation-1 {
+    0%{opacity: 1;}
+    33%{opacity: 0;}
+    66%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes animation-2 {
+    0%{opacity: 0;}
+    33%{opacity: 1;}
+    66%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes animation-3 {
+    0%{opacity: 0;}
+    33%{opacity: 0;}
+    66%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes animation-4 {
+    0%{opacity: 0;}
+    33%{opacity: 0;}
+    66%{opacity: 0;}
+    100%{opacity: 1;}
 }
