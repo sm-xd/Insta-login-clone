@@ -1,5 +1,31 @@
+body{
+    font-family: 'Instagram Sans';
+}
+
 .border{
     border: 2px solid black;
+}
+
+.column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textfield{
+    margin: 3px;
+    height: 17px;
+    width: 37vh;
+    padding: 9px 0 7px 8px;
+    font-size: 12px;
+    background-color: rgba(216, 214, 214, 0.242);
+    border: 1px solid rgba(111, 111, 111, 0.115);
+}
+
+.textfield:focus{
+    outline: none;
+    border-color: #4d4c4c84;
+    box-shadow: 0 0 1px #c2d2e9;    
 }
 
 #main{
@@ -10,11 +36,12 @@
 #img-container{
     height: 582px;
     width:250px;
-    background-image: url(/instagram/insta-images/home-phones.png);
+    background-image: url(/instagram/components/insta-images/home-phones.png);
     padding: 26px 20px 0px 156px;
 }
 
-#img-1{
+.img{
+    position: absolute;
     width: 250px;
     height: 538.84px;
 }
@@ -27,11 +54,60 @@
 }
 
 #insta-logo{
-    display: flex;
-    justify-content: center;
-    background-image: url(/instagram/insta-images/static-logos.png);
-    background-size: 100px;
-    object-fit: contain;
-    /* height: 100px;
-    width: 64px; */
+    width: 180px;
+    clip-path: inset(0px 0px 210px 0px);
+}
+
+#insta-logo-con{
+    margin-top: 45px;
+    margin-bottom: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 174px;
+    height: 50px;
+    /* object-fit: contain; */
+}
+
+#submit-button{
+    background-color: rgb(0, 149, 246);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 16px;
+    margin-top: 13px;
+    opacity: .7;
+    border: none;
+    border-radius: 7px;
+    height: 31px;
+    width: 38vh;
+}
+
+#login-form{
+    border: 3px solid yellow;
+}
+
+#content-container{
+    border: 3px solid red;
+}
+
+#img-1{
+    opacity: 1;
+    animation: animation 3s ease-in-out 9s 4 alternate forwards;
+}
+
+
+#img-2{
+    visibility: hidden;
+}
+
+#img-3{
+    visibility: hidden;
+}
+
+#img-4{
+    visibility: hidden;
+}
+@keyframes animation {
+    from{opacity: 1;}
+    to{opacity: 0;}
 }
