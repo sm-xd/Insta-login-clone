@@ -49,8 +49,7 @@ body{
 #content-container{
     display: flex;
     justify-content: center;
-    width: 500px;
-    height: 500px;
+    padding: 35px;
 }
 
 #insta-logo{
@@ -88,6 +87,67 @@ body{
 
 #content-container{
     border: 3px solid red;
+}
+
+#alternate-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.or{
+    display: flex;
+    margin-top: 15px;
+    font-size: small;
+}
+
+.line{
+    width: 110px;
+    height: 1px;
+    margin-top: 7px;
+    background-color: lightgray;
+}
+#first-line{
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+#second-line{
+    margin-left: 10px;
+    /* margin-right: 4px; */
+}
+
+#facebook-link{
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.forgot-pwd{
+    display: flex;
+    justify-content: center;
+}
+
+#forgot-pwd-link{
+    font-size: small;
+}
+
+.links{
+    text-decoration: none;
+    color: #385185;
+}
+
+#fb-img{
+    scale: 0.8;
+}
+
+.other-options{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.fb-link{
+    padding-top: 16px;
+    padding-left: 8px;
 }
 
 #img-1{
